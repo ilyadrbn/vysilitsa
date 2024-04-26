@@ -21,6 +21,7 @@ import { computed, ref } from 'vue';
 
 const word = ref('василий');
 const letters = ref<string[]>([]);
+
 const correctLetters = computed(() =>
   letters.value.filter((letter) => word.value.includes(letter))
 );
